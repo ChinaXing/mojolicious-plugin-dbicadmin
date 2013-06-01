@@ -6,17 +6,17 @@ DBIx::Class admin plugin of mojolicious
 Install 
 ----------
 - from CPAN
-
-     cpanm Mojolicious::Plugin::DBICAdmin
+           
+        cpanm Mojolicious::Plugin::DBICAdmin
 
 - from tarball
 
-    #download the source use git or wget
-    cd mojolicious-plugin-dbicadmin && cpanm .
+        #download the source use git or wget
+        cd mojolicious-plugin-dbicadmin && cpanm .
 
 Configure
 ----------
-In Mojolicious App's ``startup`` method:
+In your Mojolicious App's ``startup`` method:
 
     $self->plugin('DBICAdmin' =>   {
                 condition => 'login', # optional
