@@ -1,3 +1,4 @@
+# ABSTRACT: Web interface for DBIx::Class Schema/ResultSource/ResultSet
 use utf8;
 use strict;
 use warnings;
@@ -8,6 +9,8 @@ use Web::Util::DBIC::Paging;
 
 my $config = { page_size => 25, };
 
+=encoding utf8
+
 =head1 NAME
 
 DBICAdmin -  Web interface for DBIx::Class Schema/ResultSource/ResultSet
@@ -15,6 +18,21 @@ DBICAdmin -  Web interface for DBIx::Class Schema/ResultSource/ResultSet
 =head1 SYNOPSIS
 
 This Plugin just for Web master view/search their data in DB
+
+=head2 Configure
+
+In Mojolicious App's ``startup`` method:
+
+  $self->plugin('DBICAdmin' =>   {
+              condition => 'login', # optional
+              stylesheet => '/dbic-admin-pure.css', #optional
+              # ... other configurations
+  });
+
+=head2 Use
+
+  #start app and view the URI :
+  http://yourapp.domain/admin/dbic/
 
 =head1 DESCRIPTION
 
