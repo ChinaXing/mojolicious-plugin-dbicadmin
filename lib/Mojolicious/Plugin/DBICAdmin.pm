@@ -21,7 +21,7 @@ This Plugin just for Web master view/search their data in DB
 
 =head2 Configure
 
-In Mojolicious App's ``startup`` method:
+In Mojolicious App's C<startup> method:
 
   $self->plugin('DBICAdmin' =>   {
               condition => 'login', # optional
