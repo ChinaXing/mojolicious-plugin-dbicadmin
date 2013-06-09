@@ -1,3 +1,4 @@
+use v5.14;
 use Mojo::Base qw{-strict};
 use lib 't/lib';
 use TestApp::Schema;

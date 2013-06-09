@@ -1,4 +1,5 @@
 # ABSTRACT: Web interface for DBIx::Class Schema/ResultSource/ResultSet
+use v5.14;
 use utf8;
 use strict;
 use warnings;
