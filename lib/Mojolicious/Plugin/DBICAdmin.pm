@@ -1,4 +1,5 @@
 # ABSTRACT: Web interface for DBIx::Class Schema/ResultSource/ResultSet
+use v5.14;
 use utf8;
 use strict;
 use warnings;
@@ -21,7 +22,7 @@ This Plugin just for Web master view/search their data in DB
 
 =head2 Configure
 
-In Mojolicious App's ``startup`` method:
+In Mojolicious App's C<startup> method:
 
   $self->plugin('DBICAdmin' =>   {
               condition => 'login', # optional
