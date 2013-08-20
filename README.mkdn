@@ -4,7 +4,7 @@ Mojolicious::Plugin::DBICAdmin - Web interface for DBIx::Class Schema/ResultSour
 
 # VERSION
 
-version 0.0005
+version 0.0006
 
 # SYNOPSIS
 
